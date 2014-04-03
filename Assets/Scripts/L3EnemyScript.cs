@@ -33,7 +33,7 @@ public class L3EnemyScript : MonoBehaviour {
 	
 	}
 
-	void OnCollisionEnter(Collision other)
+	void OnTriggerEnter(Collider other)
 	{
 		if (other.transform.tag == "Bullet"){
 			hp--;

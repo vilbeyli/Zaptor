@@ -8,7 +8,7 @@ public class EnemyBaseScript : MonoBehaviour {
 	public GameObject WepUp;
 	public GameObject BombUp;
 	
-	protected int hp;
+	public int hp;
 
 	// shoot variables
 	protected float shootInterval;
@@ -79,7 +79,8 @@ public class EnemyBaseScript : MonoBehaviour {
 		checkHP ();
 	}
 	
-	void OnCollisionEnter(Collision other)
+
+	void OnTriggerEnter(Collider other)
 	{
 		if (other.transform.tag == "Bullet"){
 			hp--;

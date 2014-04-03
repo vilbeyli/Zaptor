@@ -59,6 +59,7 @@
      <Compile Include="Assets\Scripts\PlayerScripts\Bombarder.cs" />
      <Compile Include="Assets\Scripts\PlayerScripts\BulletScript.cs" />
      <Compile Include="Assets\Scripts\PlayerScripts\L1CannonScript.cs" />
+     <Compile Include="Assets\Scripts\PlayerScripts\LaserScript.cs" />
      <Compile Include="Assets\Scripts\PlayerScripts\PlayerController.cs" />
      <Compile Include="Assets\Scripts\PowerUpScripts\BombUpScript.cs" />
      <Compile Include="Assets\Scripts\PowerUpScripts\HPUpScript.cs" />
