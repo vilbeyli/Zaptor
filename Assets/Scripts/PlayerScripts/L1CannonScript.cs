@@ -20,12 +20,12 @@ public class L1CannonScript : MonoBehaviour {
 			int wepLvl = transform.parent.gameObject.GetComponent<PlayerController>().weaponLevel;
 			if(wepLvl == 1)
 			{
-				Instantiate(Bullet, transform.position, new Quaternion());
+				Instantiate(Bullet, transform.position, transform.rotation);
 			}
 
 			if (wepLvl >= 2)
 			{
-				Instantiate(BBullet, transform.position, new Quaternion());
+				Instantiate(BBullet, transform.position, transform.rotation);
 			}
 			if(wepLvl >= 3)
 			{

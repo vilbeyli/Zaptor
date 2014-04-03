@@ -47,7 +47,7 @@ public class BombScript : MonoBehaviour {
 						o.GetComponent<L2EnemyScript>().Kill ();
 						break;
 					case "L3Enemy(Clone)":
-						o.GetComponent<L2EnemyScript>().Kill ();
+						o.GetComponent<L3EnemyScript>().Kill ();
 						break;
 				}	
 			}

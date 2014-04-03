@@ -5,8 +5,8 @@ public class L3EnemyScript : MonoBehaviour {
 
 	public GameObject expl;
 
-	private float hp = 2f;
-	private float speed = -10f;
+	public float hp = 4f;
+	public float speed = -16f;
 
 	// Use this for initialization
 	void Start () 
@@ -35,13 +35,22 @@ public class L3EnemyScript : MonoBehaviour {
 
 	void OnCollisionEnter(Collision other)
 	{
-		if (other.transform.tag == "Bullet")
+		if (other.transform.tag == "Bullet"){
 			hp--;
-		if (other.transform.tag == "BBullet")
+			Destroy(other.gameObject);
+		}
+		if (other.transform.tag == "BBullet"){
 			hp -= 2;
+			Destroy(other.gameObject);
+		}
 		if (other.transform.tag == "Player"){
-			hp -= 8;
+			Kill ();
 			other.gameObject.GetComponent<PlayerController>().hp -= 5;
 		}
+	}
+
+	public void Kill()
+	{
+		hp -= 100;
 	}
 }

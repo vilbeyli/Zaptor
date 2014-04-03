@@ -81,13 +81,17 @@ public class EnemyBaseScript : MonoBehaviour {
 	
 	void OnCollisionEnter(Collision other)
 	{
-		if (other.transform.tag == "Bullet")
+		if (other.transform.tag == "Bullet"){
 			hp--;
-		if (other.transform.tag == "BBullet")
+			Destroy(other.gameObject);
+		}
+		if (other.transform.tag == "BBullet") {
 			hp -= 2;
+			Destroy (other.gameObject);
+		}
 		if (other.transform.tag == "Player"){
-			hp -= 8;
-			other.gameObject.GetComponent<PlayerController>().hp -= 8;
+			Kill ();
+			other.gameObject.GetComponent<PlayerController>().hp -= 10;
 		}
 	}
 
