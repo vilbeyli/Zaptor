@@ -46,15 +46,16 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\EnemyBaseScript.cs" />
+     <Compile Include="Assets\Scripts\EnemyScripts\EnemyBaseScript.cs" />
+     <Compile Include="Assets\Scripts\EnemyScripts\L1EnemyScript.cs" />
+     <Compile Include="Assets\Scripts\EnemyScripts\L2EnemyScript.cs" />
+     <Compile Include="Assets\Scripts\EnemyScripts\L3EnemyScript.cs" />
+     <Compile Include="Assets\Scripts\EnemyScripts\LazerProjScript.cs" />
+     <Compile Include="Assets\Scripts\EnemyScripts\Spawner.cs" />
      <Compile Include="Assets\Scripts\Expl_Script.cs" />
      <Compile Include="Assets\Scripts\GUIScripts\BombGUIScript.cs" />
      <Compile Include="Assets\Scripts\GUIScripts\HealthBarScript.cs" />
      <Compile Include="Assets\Scripts\GUIScripts\PointsScript.cs" />
-     <Compile Include="Assets\Scripts\L1EnemyScript.cs" />
-     <Compile Include="Assets\Scripts\L2EnemyScript.cs" />
-     <Compile Include="Assets\Scripts\L3EnemyScript.cs" />
-     <Compile Include="Assets\Scripts\LazerProjScript.cs" />
      <Compile Include="Assets\Scripts\PlayerScripts\BombScript.cs" />
      <Compile Include="Assets\Scripts\PlayerScripts\Bombarder.cs" />
      <Compile Include="Assets\Scripts\PlayerScripts\BulletScript.cs" />
@@ -64,7 +65,7 @@
      <Compile Include="Assets\Scripts\PowerUpScripts\BombUpScript.cs" />
      <Compile Include="Assets\Scripts\PowerUpScripts\HPUpScript.cs" />
      <Compile Include="Assets\Scripts\PowerUpScripts\WeaponUpScript.cs" />
-     <Compile Include="Assets\Scripts\Spawner.cs" />
+     <Compile Include="Assets\Scripts\ShakeCameraScript.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

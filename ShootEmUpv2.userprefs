@@ -1,8 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\PlayerScripts\LaserScript.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ShakeCameraScript.cs">
     <Files>
-      <File FileName="Assets\Scripts\PlayerScripts\LaserScript.cs" Line="110" Column="41" />
+      <File FileName="Assets\Scripts\PlayerScripts\Bombarder.cs" Line="46" Column="1" />
+      <File FileName="Assets\Scripts\PlayerScripts\BombScript.cs" Line="46" Column="83" />
+      <File FileName="Assets\Scripts\ShakeCameraScript.cs" Line="32" Column="53" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

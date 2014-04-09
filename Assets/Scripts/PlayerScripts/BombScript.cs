@@ -8,7 +8,11 @@ public class BombScript : MonoBehaviour {
 	private float speed;
 	private float startTime;
 	private float journeyLength;
-	
+	public float journeyTime;
+
+	private bool playSound = false;
+	public GameObject expl;
+
 	// Use this for initialization
 	void Start () 
 	{
@@ -16,7 +20,7 @@ public class BombScript : MonoBehaviour {
 		startMarker = new Vector3(transform.position.x, transform.position.y, 0);
 		endMarker = new Vector3 (0.078f, -0.089f, 0f);
 		journeyLength = Vector3.Distance(startMarker, endMarker);
-		speed = journeyLength/1.75f;
+		speed = journeyLength/journeyTime;
 	}
 	
 	// Update is called once per frame
@@ -28,13 +32,19 @@ public class BombScript : MonoBehaviour {
 		//transform.Rotate(new Vector3(1f, 0f, 0f) , 320*Time.deltaTime);
 		transform.RotateAround (Vector2.right, 20 * Time.deltaTime);
 
+		// explosion effect
+		if(playSound == false && Time.time - startTime >= journeyTime - 0.35f){ 
+			GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<Bombarder>().play();
+			playSound = true;
+		}
+
 		if(transform.position == endMarker)
 		{
 			// destroy the bomb
 			Destroy (gameObject, 0.05f);
-			
-			// explosion effect
-			
+			Instantiate(expl, transform.position, transform.rotation);
+			GameObject.Find("Main Camera").GetComponent<ShakeCameraScript>().ShakeCamera();
+
 			// destroy all enemy units
 			foreach(GameObject o in GameObject.FindGameObjectsWithTag("Enemy"))
 			{

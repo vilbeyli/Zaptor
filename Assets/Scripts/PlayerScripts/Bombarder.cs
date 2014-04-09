@@ -4,6 +4,7 @@ using System.Collections;
 public class Bombarder : MonoBehaviour {
 
 	public GameObject bomb;
+
 	private bool justFired;
 	private float timeElapsed, cooldown;
 
@@ -35,5 +36,10 @@ public class Bombarder : MonoBehaviour {
 			timeElapsed = 0f;
 		}
 
+	}
+
+	public void play()
+	{
+		audio.Play();
 	}
 }
