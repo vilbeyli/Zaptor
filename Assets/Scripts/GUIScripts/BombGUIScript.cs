@@ -30,18 +30,22 @@ public class BombGUIScript : MonoBehaviour {
 				guiTexture.pixelInset = new Rect(-28f, -h/2, w, h);
 				break;
 			case 2:
+				guiTexture.enabled = true;
 				guiTexture.texture = bomb2;
 				guiTexture.pixelInset = new Rect(-29f, -h/2, w*2, h);
 				break;
 			case 3:
+				guiTexture.enabled = true;
 				guiTexture.texture = bomb3;
 				guiTexture.pixelInset = new Rect(-30f, -h/2, w*3, h);
 				break;
 			case 4:
+				guiTexture.enabled = true;
 				guiTexture.texture = bomb4;
 				guiTexture.pixelInset = new Rect(-31f, -h/2, w*4, h);
 				break;
 			case 5:
+				guiTexture.enabled = true;
 				guiTexture.texture = bomb5;
 				guiTexture.pixelInset = new Rect(-32f, -h/2, w*5, h);
 				break;

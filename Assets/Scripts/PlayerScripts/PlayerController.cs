@@ -10,9 +10,11 @@
  * http://creativecommons.org/licenses/by/3.0/
  *
  */
+#define debug
 
 using UnityEngine;
 using System.Collections;
+
 
 public class PlayerController : MonoBehaviour 
 {
@@ -58,7 +60,22 @@ public class PlayerController : MonoBehaviour
 		{
 			Instantiate(expl, transform.position, new Quaternion());
 			Destroy(gameObject);
+			GameObject.Find("Main Camera").GetComponent<ShakeCameraScript>().restartGame();
 		}
 
+
+
+#if debug
+		if(Input.GetButtonDown("Cheat"))
+		{
+			hp = 100;
+			weaponLevel = 5;
+			bombCount = 5;
+			score = 800;
+		}
+#endif
+
 	}
+
+
 }

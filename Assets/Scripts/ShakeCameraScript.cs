@@ -36,6 +36,18 @@ public class ShakeCameraScript : MonoBehaviour {
 	{
 		shakeCam = true;
 	}
-	
+
+	public void restartGame()
+	{
+		StartCoroutine(Restart ());
+	}
+
+	IEnumerator Restart()
+	{
+		print ("Waiting for 5 seconds for new game!");
+		yield return new WaitForSeconds(5f);
+		print ("wait is over");
+		Application.LoadLevel("game");
+	}
 
 }
