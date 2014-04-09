@@ -28,6 +28,15 @@ public class PlayerController : MonoBehaviour
 	// Update is called once per frame
 	void Update () 
 	{
+
+		// rotate ship when moving horizontally
+		if(Input.GetAxis("Horizontal") < 0)
+			renderer.material.mainTextureOffset = new Vector2(0f, 0f);
+		else if (Input.GetAxis("Horizontal") > 0)
+			renderer.material.mainTextureOffset = new Vector2(0.668f, 0f);
+		else
+			renderer.material.mainTextureOffset = new Vector2(0.333f, 0f);
+
 		/*********************************************************/
 		/********************** TRANSFORM CODE *******************/
 		/*********************************************************/
@@ -44,25 +53,6 @@ public class PlayerController : MonoBehaviour
 		
 		transform.Translate (h, v, 0);
 
-
-		/*
-		Vector3 viewPosition = Camera.main.WorldToViewportPoint(transform.position);
-		viewPosition.x = Mathf.Clamp01(viewPosition.x);
-		viewPosition.y = Mathf.Clamp01(viewPosition.y);
-		transform.position = Camera.main.ViewportToWorldPoint(viewPosition);
-		 */
-
-		//Vector3 screen_position = Camera.main.WorldToScreenPoint(transform.position);
-		//print (screen_position.x + " " + screen_position.y);
-
-		/*
-		Vector3 tmpPos = transform.position;
-		tmpPos.x = Mathf.Clamp (tmpPos.x, -Screen.width / 2, Screen.width / 2);
-		tmpPos.y = Mathf.Clamp (tmpPos.y, -Screen.height / 2, Screen.height / 2);
-		transform.position = tmpPos;
-		 */
-
-		//print ("HP: " + hp + " Score: " + score + " Bomb: " + bombCount);
 
 		if(hp <= 0)
 		{
