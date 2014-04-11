@@ -7,7 +7,7 @@ This is the very first game I developed as a personal project where the player c
  
 More details about the assets can (will) be found in Credits of the game.
 
-LICENCE : http://creativecommons.org/licenses/by-nc-sa/4.0/
+LICENCE
 ===========================================================
 
-This game is Licenced under Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0). Visit the link for the complete licence statement.
+This game is Licenced under Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0). Visit the link for the complete licence statement ( http://creativecommons.org/licenses/by-nc-sa/4.0/ ).
