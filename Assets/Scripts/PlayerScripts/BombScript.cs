@@ -41,8 +41,8 @@ public class BombScript : MonoBehaviour {
 		if(transform.position == endMarker)
 		{
 			// destroy the bomb
-			Destroy (gameObject, 0.05f);
 			Instantiate(expl, transform.position, transform.rotation);
+			Destroy (gameObject, 0.05f);
 			GameObject.Find("Main Camera").GetComponent<ShakeCameraScript>().ShakeCamera();
 
 			// destroy all enemy units
