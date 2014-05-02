@@ -5,7 +5,7 @@ This is the very first game I developed using Unity3D as a personal project wher
  - https://www.freesound.org/
  - http://opengameart.org/
  
-More details about the assets can (will) be found in Credits of the game.
+More details about the assets can (will) be found in Credits of the game. A [playable version of the current game](http://www.burakozdemir.co.uk/volkan/) also exists! Give it a try!
 
 Licence
 ===========================================================
