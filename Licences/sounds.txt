@@ -1,0 +1,7 @@
+explosion3.wav				https://www.freesound.org/people/sarge4267/sounds/102733/
+explosion4.wav				https://www.freesound.org/people/sarge4267/sounds/102734/		player explosion
+laser_shot_silenced.wav		https://www.freesound.org/people/bubaproducer/sounds/151022/	laser beam
+heavy_explosion.mp3			http://www.freesfx.co.uk
+exploison.flac				no licence
+explosive.flac				no licence
+powerup.wav					https://www.freesound.org/people/mazk1985/sounds/187407/

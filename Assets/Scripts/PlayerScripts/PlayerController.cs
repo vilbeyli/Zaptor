@@ -19,6 +19,7 @@ using System.Collections;
 public class PlayerController : MonoBehaviour 
 {
 	public GameObject expl;
+	public AudioClip powerUp;
 
 	public int hp = 100;
 	public int weaponLevel = 1;
@@ -32,12 +33,24 @@ public class PlayerController : MonoBehaviour
 	{
 
 		// rotate ship when moving horizontally
-		if(Input.GetAxis("Horizontal") < 0)
+		Vector3 tf = transform.position ;
+		tf.y -= 1.7f;
+		if(Input.GetAxis("Horizontal") < 0){	// left
 			renderer.material.mainTextureOffset = new Vector2(0f, 0f);
-		else if (Input.GetAxis("Horizontal") > 0)
+			tf.x -= 0.15f;
+			GameObject.Find("Jets").transform.position = tf;
+			
+		}
+		else if (Input.GetAxis("Horizontal") > 0){	// right
 			renderer.material.mainTextureOffset = new Vector2(0.668f, 0f);
-		else
+			tf.x += 0.15f;
+			GameObject.Find("Jets").transform.position = tf;
+		}
+		else{
 			renderer.material.mainTextureOffset = new Vector2(0.333f, 0f);
+
+			GameObject.Find("Jets").transform.position = tf;
+		}
 
 		/*********************************************************/
 		/********************** TRANSFORM CODE *******************/
@@ -50,7 +63,7 @@ public class PlayerController : MonoBehaviour
 		// do not let the ship get out of the camera
 		Vector3 tmpPos = transform.position;
 		tmpPos.x = Mathf.Clamp (tmpPos.x, -12.26f, 10.826f);
-		tmpPos.y = Mathf.Clamp (tmpPos.y, -8.9f, 8.9f);
+		tmpPos.y = Mathf.Clamp (tmpPos.y, -8.5f, 8.5f);
 		transform.position = tmpPos;
 		
 		transform.Translate (h, v, 0);
@@ -75,6 +88,13 @@ public class PlayerController : MonoBehaviour
 		}
 #endif
 
+	}
+
+	void OnCollisionEnter(Collision other)
+	{
+		if(other.transform.tag == "PowerUp")
+			AudioSource.PlayClipAtPoint(powerUp, other.transform.position);
+		 
 	}
 
 
