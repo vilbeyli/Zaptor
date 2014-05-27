@@ -5,6 +5,7 @@ heavy_explosion.mp3			http://www.freesfx.co.uk
 exploison.flac				no licence
 explosive.flac				no licence
 powerup.wav					https://www.freesound.org/people/mazk1985/sounds/187407/
+beep.wav					https://www.freesound.org/people/Empty%20Bell/sounds/180821/
 
 sax rock n roll				"Sax, Rock, and Roll" Kevin MacLeod (incompetech.com) 
 							Licensed under Creative Commons: By Attribution 3.0

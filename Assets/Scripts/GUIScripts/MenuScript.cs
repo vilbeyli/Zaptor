@@ -33,8 +33,10 @@ public class MenuScript : MonoBehaviour {
 		if(this.name == "Quit")
 			Application.Quit();
 		if(this.name == "Instructions")
-			Application.LoadLevel("instuctions");
-		if(this.name == "Creadits")
+			Application.LoadLevel("instructions");
+		if(this.name == "Credits")
 			Application.LoadLevel("credits");
+		if(this.name == "Back")
+			Application.LoadLevel("menu");
 	}
 }
