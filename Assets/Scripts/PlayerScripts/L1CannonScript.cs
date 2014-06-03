@@ -15,7 +15,7 @@ public class L1CannonScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		if (Input.GetButtonDown ("Fire1")) 
+		if (Input.GetButtonDown ("Fire1") && !PauseScript.gamePaused) 
 		{
 			transform.parent.audio.Play ();
 			int wepLvl = transform.parent.gameObject.GetComponent<PlayerController>().weaponLevel;
@@ -28,7 +28,7 @@ public class L1CannonScript : MonoBehaviour {
 			{
 				Instantiate(BBullet, transform.position, transform.rotation);
 			}
-			if(wepLvl >= 3)
+			if(wepLvl == 3 || wepLvl == 4)
 			{
 				Quaternion quatL = new Quaternion(-8f, 90f, 0f, 0f);
 				Quaternion quatR = new Quaternion(8f, 90f, 0f, 0f);
@@ -37,6 +37,16 @@ public class L1CannonScript : MonoBehaviour {
 					Instantiate(Bullet, transform.position, quatL);
 				else if(this.name == "FireCannonR")
 					Instantiate(Bullet, transform.position, quatR);
+			}
+			if (wepLvl >= 5)
+			{
+				Quaternion quatL = new Quaternion(-8f, 90f, 0f, 0f);
+				Quaternion quatR = new Quaternion(8f, 90f, 0f, 0f);
+				
+				if(this.name == "FireCannonL")
+					Instantiate(BBullet, transform.position, quatL);
+				else if(this.name == "FireCannonR")
+					Instantiate(BBullet, transform.position, quatR);
 			}
 
 		}

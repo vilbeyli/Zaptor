@@ -26,7 +26,7 @@ public class Bombarder : MonoBehaviour {
 				justFired = false;
 		}
 
-		if(Input.GetButtonDown("Fire2") && justFired == false &&
+		if(Input.GetButtonDown("Fire2") && !justFired && !PauseScript.gamePaused &&
 		   GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().bombCount > 0
 		   )
 		{

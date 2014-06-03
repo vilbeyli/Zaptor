@@ -23,6 +23,10 @@ public class L4ProjectileScript : MonoBehaviour {
 	void Update () 
 	{
 		transform.Translate(dir*Time.deltaTime*speed);
+
+		if(transform.position.x < -15 || transform.position.x > 15 ||
+		   transform.position.y < -10 || transform.position.y > 10)
+			Destroy(gameObject);
 	}
 
 	void OnTriggerEnter(Collider other)

@@ -26,12 +26,16 @@ public class PlayerController : MonoBehaviour
 	public int bombCount = 0;
 	public int score = 0;
 
-	public float speed = 0.3f;
+	public float speed = 3f;
 
 	// Update is called once per frame
 	void Update () 
 	{
 
+				
+		/*********************************************************/
+		/********************** TRANSFORM CODE *******************/
+		/*********************************************************/
 		// rotate ship when moving horizontally
 		Vector3 tf = transform.position ;
 		tf.y -= 1.7f;
@@ -47,18 +51,15 @@ public class PlayerController : MonoBehaviour
 			GameObject.Find("Jets").transform.position = tf;
 		}
 		else{
-			renderer.material.mainTextureOffset = new Vector2(0.333f, 0f);
+			renderer.material.mainTextureOffset = new Vector2(0.3333f, 0f);
 
 			GameObject.Find("Jets").transform.position = tf;
 		}
 
-		/*********************************************************/
-		/********************** TRANSFORM CODE *******************/
-		/*********************************************************/
 		//horizontal <- || -horizontal ->
 		//vertical down || -vertical up
-		float h = -Input.GetAxis ("Horizontal")*speed;
-		float v = -Input.GetAxis ("Vertical")*speed;
+		float h = -Input.GetAxis ("Horizontal")*speed*Time.deltaTime;
+		float v = -Input.GetAxis ("Vertical")*speed*Time.deltaTime;
 
 		// do not let the ship get out of the camera
 		Vector3 tmpPos = transform.position;

@@ -33,7 +33,8 @@ public class LaserScript : MonoBehaviour
 	{
 
 		// If laser is fired
-		if(player.weaponLevel >= 4 && Input.GetButtonDown("Fire1") && justFired == false)
+		if(player.weaponLevel >= 4 && Input.GetButtonDown("Fire1") && 
+		   !PauseScript.gamePaused && !justFired)
 		{
 			startPosition = transform.position;
 			justFired = true;
