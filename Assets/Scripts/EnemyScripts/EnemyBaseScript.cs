@@ -13,6 +13,7 @@ public class EnemyBaseScript : MonoBehaviour {
 	// shoot variables
 	protected float shootInterval;
 	protected float start1, start2;
+	protected bool haveShooter = true;
 	protected bool shootSymmetric;
 	protected Vector3 pos1, pos2;
 	protected float xradius = 0.7f;
@@ -65,6 +66,8 @@ public class EnemyBaseScript : MonoBehaviour {
 		{
 			transform.Translate(direction*speed*Time.deltaTime);
 			if(Time.time - zigZagTime >= zigZagInterval){
+
+				// flip direction
 				direction.x = -direction.x;
 				zigZagTime = Time.time;
 			}
@@ -74,8 +77,11 @@ public class EnemyBaseScript : MonoBehaviour {
 			transform.Translate (new Vector3(0f, 1f, 0f)*speed*Time.deltaTime);
 		}
 
-		updateShooterPositions ();
-		shoot ();
+		if(haveShooter)
+		{
+			updateShooterPositions ();
+			shoot ();
+		}
 		checkHP ();
 	}
 	

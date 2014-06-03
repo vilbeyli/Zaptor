@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 0ef25dbef89e8864493e96e8c465174a
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - expl: {fileID: 100000, guid: 3ad569ccbe3bcee42a4a5a36265fc6ad, type: 2}
+  - enemyProjectile: {instanceID: 0}
+  - HPUp: {fileID: 100000, guid: d233484068227e4409a813647f140600, type: 2}
+  - WepUp: {fileID: 100000, guid: 343fac9fcb084054d87f2784ef5dc887, type: 2}
+  - BombUp: {fileID: 100000, guid: b88ef52a58c1dd642a6e950221ca80b6, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 

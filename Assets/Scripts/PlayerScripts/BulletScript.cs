@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class BulletScript : MonoBehaviour {
-	private float speed = 0.5f;
+	private float speed = 25f;
 
 	// Use this for initialization
 	void Start () {
@@ -12,7 +12,7 @@ public class BulletScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		transform.Translate (new Vector3 (0, speed, 0));
+		transform.Translate (new Vector3 (0, speed*Time.deltaTime, 0));
 		if (transform.position.y > 10.2)
 			Destroy (gameObject);
 

@@ -35,4 +35,5 @@ public class BombUpScript : MonoBehaviour {
 			Destroy(gameObject);
 		}
 	}
+
 }

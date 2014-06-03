@@ -6,6 +6,7 @@ MonoImporter:
   - L1Enemy: {fileID: 100000, guid: 677066c44e092a04fb7635af697eefb0, type: 2}
   - L2Enemy: {fileID: 100000, guid: 416e9f9464bdd2c43924ec6eaf9232ba, type: 2}
   - L3Enemy: {fileID: 100000, guid: 1e57fcee7b85ee942aa234e5e1d940d9, type: 2}
+  - L4Enemy: {fileID: 100000, guid: 23536aba9244e8c449c4909c83c922ab, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

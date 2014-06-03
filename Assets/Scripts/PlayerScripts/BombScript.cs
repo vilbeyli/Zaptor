@@ -21,6 +21,7 @@ public class BombScript : MonoBehaviour {
 		endMarker = new Vector3 (0.078f, -0.089f, 0f);
 		journeyLength = Vector3.Distance(startMarker, endMarker);
 		speed = journeyLength/journeyTime;
+
 	}
 	
 	// Update is called once per frame
