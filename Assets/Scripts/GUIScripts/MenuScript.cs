@@ -15,7 +15,6 @@ public class MenuScript : MonoBehaviour {
 		// change color on mouse over
 		guiText.color = Color.green;
 		transform.GetChild(0).gameObject.SetActive(true);
-		//AudioSource.PlayClipAtPoint(beep, transform.position);
 		audio.Play();
 	}
 
