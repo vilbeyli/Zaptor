@@ -4,12 +4,6 @@
  * 
  */
 
-/*
- * "Sax, Rock, and Roll" Kevin MacLeod (incompetech.com) 
- * Licensed under Creative Commons: By Attribution 3.0
- * http://creativecommons.org/licenses/by/3.0/
- *
- */
 #define debug
 
 using UnityEngine;
