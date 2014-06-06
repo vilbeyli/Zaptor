@@ -1,10 +1,4 @@
-﻿/*
- * Mention MillionthVector and, if feasible,
- * place a link to his blog http://millionthvector.blogspot.de.
- * 
- */
-
-#define debug
+﻿#define debug
 
 using UnityEngine;
 using System.Collections;
