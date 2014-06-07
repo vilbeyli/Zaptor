@@ -27,8 +27,10 @@ public class MenuScript : MonoBehaviour {
 
 	void OnMouseDown()
 	{
-		if(this.name == "Play")
+		if(this.name == "Play"){
+			Destroy(GameObject.Find("MenuMusic"));
 			Application.LoadLevel("game");
+		}
 		if(this.name == "Quit")
 			Application.Quit();
 		if(this.name == "Instructions")
