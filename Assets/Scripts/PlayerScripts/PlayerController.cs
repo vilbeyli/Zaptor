@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
 	public int hp = 100;
 	public int weaponLevel = 1;
 	public int bombCount = 0;
-	public int score = 0;
+	public static int score = 0;
 
 	public float speed = 3f;
 

@@ -11,6 +11,7 @@ public class L3EnemyScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
+
 	}
 	
 	// Update is called once per frame
@@ -24,7 +25,7 @@ public class L3EnemyScript : MonoBehaviour {
 		{
 			Destroy (gameObject);
 			Instantiate(expl, transform.position, new Quaternion());
-			GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().score += 5;
+			PlayerController.score += 5;
 		}
 
 		// off screen ? destroy;

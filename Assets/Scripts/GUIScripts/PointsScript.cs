@@ -9,7 +9,7 @@ public class PointsScript : MonoBehaviour {
 	{
 		try
 		{
-			score = GameObject.FindWithTag("Player").GetComponent<PlayerController>().score;
+			score = PlayerController.score;
 
 			// switch (number of digits in score)
 			switch(int.Parse(Mathf.Floor(Mathf.Log10 (score)).ToString()))	

@@ -11,6 +11,7 @@ public class L1EnemyScript : EnemyBaseScript
 		hp = 8;
 		speed = Random.Range(-3.2f, -1.8f);
 		isZigZag = false;
+		score = 5;
 	}
 	
 	

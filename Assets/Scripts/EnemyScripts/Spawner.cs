@@ -24,7 +24,7 @@ public class Spawner : MonoBehaviour {
 		if(Time.time - timeStamp >= spawnInterval)
 		{
 			try{	// if player gets destroyed, nothing executes.
-				float score = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().score;
+				float score = PlayerController.score;
 				if(score <= 150)
 					Instantiate(L1Enemy, transform.position, new Quaternion());
 				else if(score <= 450)

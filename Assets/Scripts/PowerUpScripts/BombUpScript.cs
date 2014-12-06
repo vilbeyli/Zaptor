@@ -29,7 +29,7 @@ public class BombUpScript : MonoBehaviour {
 			}
 			else
 			{
-				other.gameObject.GetComponent<PlayerController>().score += 50;
+				PlayerController.score += 50;
 			}	
 			
 			Destroy(gameObject);

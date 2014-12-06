@@ -9,6 +9,7 @@ public class L4EnemyScript : EnemyBaseScript {
 		base.Start();
 		hp = 30;
 		speed = -1f;
+		score = 25;
 	
 		isZigZag = false;
 		haveShooter = false;

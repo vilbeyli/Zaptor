@@ -9,6 +9,7 @@ public class EnemyBaseScript : MonoBehaviour {
 	public GameObject BombUp;
 	
 	public int hp;
+	protected int score;
 
 	// shoot variables
 	protected float shootInterval;
@@ -143,10 +144,11 @@ public class EnemyBaseScript : MonoBehaviour {
 		if (hp <= 0)
 		{	
 			// update score
-			if(gameObject.name == "L1Enemy(Clone)")
+			/*if(gameObject.name == "L1Enemy(Clone)")
 				GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().score += 5;
 			else if(gameObject.name == "L2Enemy(Clone)")
-				GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().score += 10;
+				GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().score += 10;*/
+			PlayerController.score += score;
 
 			// destroy object
 			Destroy (gameObject);
