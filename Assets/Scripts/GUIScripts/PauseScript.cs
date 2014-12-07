@@ -17,11 +17,7 @@ public class PauseScript : MonoBehaviour {
 		if(Input.GetButtonDown("Pause"))
 		{
 			gamePaused = !gamePaused;
-			if(gamePaused)
-				GameObject.Find("Main Camera").audio.Pause();
-			else
-				GameObject.Find("Main Camera").audio.Play();
-			
+			AudioScript.TogglePause(gamePaused);
 		}
 		
 		if(gamePaused == true)

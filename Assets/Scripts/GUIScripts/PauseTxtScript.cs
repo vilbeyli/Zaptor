@@ -37,10 +37,13 @@ public class PauseTxtScript : MonoBehaviour {
 		PauseScript.gamePaused = false;
 		if(this.name == "TXTRestart"){
 			Application.LoadLevel("game");
+
+			// restart the music
+			AudioScript.TogglePause(false);
 		}
 		if(this.name == "TXTResume")
 		{
-			GameObject.Find("Main Camera").audio.Play ();
+			AudioScript.TogglePause(PauseScript.gamePaused);
 		}
 		if(this.name == "TXTMainMenu")
 			Application.LoadLevel("menu");
