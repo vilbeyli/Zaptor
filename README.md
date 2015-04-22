@@ -8,10 +8,7 @@ Full details about the assets used in game can be found in [the assets wiki page
 
 You can [visit next project of mine](https://github.com/vilbeyli/Pacman), or
 
+**You can [play the game on Web!](http://vilbeyli.github.io/Zaptor/)**
+<sub>(Cheaters! Press backspace!)</sub> 
+
 ![Zaptor Screenshot](http://vilbeyli.github.io/images/zaptor.png)
-
-#**You can [play the game on Web!](http://vilbeyli.github.io/Zaptor/)** 
-
-<sub>(Cheaters! Press backspace!)</sub>
-
-This game is Licenced under [Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](http://creativecommons.org/licenses/by-nc-sa/4.0/).
