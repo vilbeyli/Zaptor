@@ -23,12 +23,12 @@ public class PauseScript : MonoBehaviour {
 		if(gamePaused == true)
 		{
 			Time.timeScale = 0;
-			GameObject.Find("PauseMenu").guiTexture.enabled = true;
+			GameObject.Find("PauseMenu").GetComponent<GUITexture>().enabled = true;
 		}
 		else
 		{
 			Time.timeScale = 1;
-			GameObject.Find("PauseMenu").guiTexture.enabled = false;
+			GameObject.Find("PauseMenu").GetComponent<GUITexture>().enabled = false;
 		}
 
 	}

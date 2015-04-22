@@ -55,7 +55,7 @@ public class LaserScript : MonoBehaviour
 
 			// play the laser effect
 			gameObject.GetComponentInChildren<ParticleSystem>().Play();
-			gameObject.audio.Play();
+			gameObject.GetComponent<AudioSource>().Play();
 		}
 		
 		// Fading effect

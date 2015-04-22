@@ -17,7 +17,7 @@ public class L1CannonScript : MonoBehaviour {
 	{
 		if (Input.GetButtonDown ("Fire1") && !PauseScript.gamePaused) 
 		{
-			transform.parent.audio.Play ();
+			transform.parent.GetComponent<AudioSource>().Play ();
 			int wepLvl = transform.parent.gameObject.GetComponent<PlayerController>().weaponLevel;
 			if(wepLvl == 1)
 			{

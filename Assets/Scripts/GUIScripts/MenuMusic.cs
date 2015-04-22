@@ -7,7 +7,7 @@ public class MenuMusic : MonoBehaviour {
 
 	void Start()
 	{
-		audio.Play();
+		GetComponent<AudioSource>().Play();
 		DontDestroyOnLoad(this.gameObject);
 	}
 

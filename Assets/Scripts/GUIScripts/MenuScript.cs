@@ -13,15 +13,15 @@ public class MenuScript : MonoBehaviour {
 	void OnMouseEnter()
 	{
 		// change color on mouse over
-		guiText.color = Color.green;
+		GetComponent<GUIText>().color = Color.green;
 		transform.GetChild(0).gameObject.SetActive(true);
-		audio.Play();
+		GetComponent<AudioSource>().Play();
 	}
 
 	void OnMouseExit()
 	{
 		// change color back to white
-		guiText.color = Color.white;
+		GetComponent<GUIText>().color = Color.white;
 		transform.GetChild(0).gameObject.SetActive(false);
 	}
 

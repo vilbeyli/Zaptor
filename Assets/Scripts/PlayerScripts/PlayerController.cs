@@ -28,18 +28,18 @@ public class PlayerController : MonoBehaviour
 		Vector3 tf = transform.position ;
 		tf.y -= 1.7f;
 		if(Input.GetAxis("Horizontal") < 0){	// left
-			renderer.material.mainTextureOffset = new Vector2(0f, 0f);
+			GetComponent<Renderer>().material.mainTextureOffset = new Vector2(0f, 0f);
 			tf.x -= 0.15f;
 			GameObject.Find("Jets").transform.position = tf;
 			
 		}
 		else if (Input.GetAxis("Horizontal") > 0){	// right
-			renderer.material.mainTextureOffset = new Vector2(0.668f, 0f);
+			GetComponent<Renderer>().material.mainTextureOffset = new Vector2(0.668f, 0f);
 			tf.x += 0.15f;
 			GameObject.Find("Jets").transform.position = tf;
 		}
 		else{
-			renderer.material.mainTextureOffset = new Vector2(0.3333f, 0f);
+			GetComponent<Renderer>().material.mainTextureOffset = new Vector2(0.3333f, 0f);
 
 			GameObject.Find("Jets").transform.position = tf;
 		}

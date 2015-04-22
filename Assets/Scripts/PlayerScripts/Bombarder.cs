@@ -40,6 +40,6 @@ public class Bombarder : MonoBehaviour {
 
 	public void play()
 	{
-		audio.Play();
+		GetComponent<AudioSource>().Play();
 	}
 }

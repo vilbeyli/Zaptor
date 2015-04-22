@@ -22,32 +22,32 @@ public class BombGUIScript : MonoBehaviour {
 			bombCount = GameObject.Find ("Player").GetComponent<PlayerController> ().bombCount;
 			switch (bombCount) {
 			case 0:
-				guiTexture.enabled = false;
+				GetComponent<GUITexture>().enabled = false;
 				break;
 			case 1:
-				guiTexture.enabled = true;
-				guiTexture.texture = bomb1;
-				guiTexture.pixelInset = new Rect(-28f, -h/2, w, h);
+				GetComponent<GUITexture>().enabled = true;
+				GetComponent<GUITexture>().texture = bomb1;
+				GetComponent<GUITexture>().pixelInset = new Rect(-28f, -h/2, w, h);
 				break;
 			case 2:
-				guiTexture.enabled = true;
-				guiTexture.texture = bomb2;
-				guiTexture.pixelInset = new Rect(-29f, -h/2, w*2, h);
+				GetComponent<GUITexture>().enabled = true;
+				GetComponent<GUITexture>().texture = bomb2;
+				GetComponent<GUITexture>().pixelInset = new Rect(-29f, -h/2, w*2, h);
 				break;
 			case 3:
-				guiTexture.enabled = true;
-				guiTexture.texture = bomb3;
-				guiTexture.pixelInset = new Rect(-30f, -h/2, w*3, h);
+				GetComponent<GUITexture>().enabled = true;
+				GetComponent<GUITexture>().texture = bomb3;
+				GetComponent<GUITexture>().pixelInset = new Rect(-30f, -h/2, w*3, h);
 				break;
 			case 4:
-				guiTexture.enabled = true;
-				guiTexture.texture = bomb4;
-				guiTexture.pixelInset = new Rect(-31f, -h/2, w*4, h);
+				GetComponent<GUITexture>().enabled = true;
+				GetComponent<GUITexture>().texture = bomb4;
+				GetComponent<GUITexture>().pixelInset = new Rect(-31f, -h/2, w*4, h);
 				break;
 			case 5:
-				guiTexture.enabled = true;
-				guiTexture.texture = bomb5;
-				guiTexture.pixelInset = new Rect(-32f, -h/2, w*5, h);
+				GetComponent<GUITexture>().enabled = true;
+				GetComponent<GUITexture>().texture = bomb5;
+				GetComponent<GUITexture>().pixelInset = new Rect(-32f, -h/2, w*5, h);
 				break;
 			}
 		}

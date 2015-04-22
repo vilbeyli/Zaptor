@@ -12,7 +12,7 @@ public class Expl_Script : MonoBehaviour {
 	// Update is called once per frame
 	void Update () 
 	{
-		if(gameObject.particleSystem.isPlaying == false)
+		if(gameObject.GetComponent<ParticleSystem>().isPlaying == false)
 			Destroy (gameObject);
 	}
 }

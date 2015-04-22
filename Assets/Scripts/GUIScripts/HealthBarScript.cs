@@ -12,11 +12,11 @@ public class HealthBarScript : MonoBehaviour {
 			hp = (float)GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>().hp;
 			if(hp > 0){
 				adjust = (100f-hp)/10;
-				guiTexture.pixelInset = new Rect (-16, -128+adjust, 32, 256f * hp / 100f);
+				GetComponent<GUITexture>().pixelInset = new Rect (-16, -128+adjust, 32, 256f * hp / 100f);
 			}
 		}
 		catch{
-			guiTexture.enabled = false;
+			GetComponent<GUITexture>().enabled = false;
 		}	
 	}
 }

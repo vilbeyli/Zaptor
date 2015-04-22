@@ -6,30 +6,30 @@ public class PauseTxtScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () 
 	{
-		guiText.enabled = false;
+		GetComponent<GUIText>().enabled = false;
 	}
 	
 	// Update is called once per frame
 	void Update () 
 	{
 		if(PauseScript.gamePaused)
-			guiText.enabled = true;
+			GetComponent<GUIText>().enabled = true;
 		else
-			guiText.enabled = false;
+			GetComponent<GUIText>().enabled = false;
 		
 	}
 
 	void OnMouseEnter()
 	{
 		// change color on mouse over
-		guiText.color = Color.green;
-		audio.Play();
+		GetComponent<GUIText>().color = Color.green;
+		GetComponent<AudioSource>().Play();
 	}
 	
 	void OnMouseExit()
 	{
 		// change color back to white
-		guiText.color = Color.white;
+		GetComponent<GUIText>().color = Color.white;
 	}
 	
 	void OnMouseDown()
