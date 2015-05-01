@@ -398,5 +398,5 @@ PlayerSettings:
   - WebGL::emscriptenArgs
   - WebGL::template
   WebGL::emscriptenArgs: 
-  WebGL::template: APPLICATION:Default
+  WebGL::template: APPLICATION:NoFullscreen
   firstStreamedLevelWithResources: 0
