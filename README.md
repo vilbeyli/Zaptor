@@ -9,6 +9,6 @@ Full details about the assets used in game can be found in [the assets wiki page
 You can [visit next project of mine](https://github.com/vilbeyli/Pacman), or
 
 **You can [play the game on Web!](http://vilbeyli.github.io/Zaptor/)**
-<sub>(Cheaters! Press backspace!)</sub> 
+<sub>(Press backspace for cheats!)</sub> 
 
-![Zaptor Screenshot](http://vilbeyli.github.io/images/zaptor.png)
+![Zaptor Screenshot](http://vilbeyli.github.io/images/screenshots/zaptor.png)
